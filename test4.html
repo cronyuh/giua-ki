@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+		/* Lớp "highlight" */
+		.highlight {
+			width: 300px;
+			height: 50px;
+			background-color: #FDB813;
+		}
+
+		/* Lớp "box" */
+		.box {
+			width: 100%;
+			height: 200px;
+			border: 2px dashed #222;
+			background-color: #FDB813;
+			transition: all 0.5s ease;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+
+		/* Hiệu ứng khi di chuột qua "box" */
+		.box:hover {
+			background-color: #222;
+			border-color: #FDB813;
+		}
+
+		/* Menu */
+		nav {
+			background-color: #222;
+			color: #FDB813;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li a {
+			color: #ffb303;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		/* Chân trang */
+		footer {
+			background-color: #222;
+			color: #FDB813;
+			padding: 10px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 60px;
+		}
+	</style>
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="box">
+        <h2>Chào mừng đến với My Website!</h2>
+        <p>Nhận ưu đãi đặc biệt khi mua sắm sản phẩm của chúng tôi.</p>
+      </div>
+      <div class="product-container">
+        <h2>Danh sách sản phẩm</h2>
+        </div>
+      </div>
+  </main>
+  <footer> 
+        <p>My Website &copy; <?php echo date('Y') ?></p>
+        <p>Design and developed by [Họ tên] - [Mã sinh viên] - [Lớp]</p>   
+  </footer>
+</body>
+<script src="my.js">
+//    let products = [
+//   {
+//     name: "Áo thun nam",
+//     price: 250000,
+//     description: "Áo thun nam phong cách trẻ trung và năng động",
+//   },
+//   {
+//     name: "Áo khoác nữ",
+//     price: 800000,
+//     description: "Áo khoác nữ dành cho những ngày đông lạnh",
+//   },
+//   {
+//     name: "Quần jean nam",
+//     price: 500000,
+//     description: "Quần jean nam phối được với nhiều kiểu trang phục khác nhau",
+//   },
+//   {
+//     name: "Đầm hoa nữ",
+//     price: 650000,
+//     description: "Đầm hoa nữ dễ thương và duyên dáng",
+//   },
+// ];
+
+// // Lặp qua mảng sản phẩm và in ra trang HTML
+// for (let i = 0; i < products.length; i++) {
+//   const product = products[i];
+
+//   // Tạo một phần tử HTML để chứa thông tin sản phẩm
+//   const productElement = document.createElement("div");
+//   productElement.classList.add("product");
+
+//   // Thêm thông tin sản phẩm vào phần tử HTML
+//   productElement.innerHTML = `
+//     <h2>${product.name}</h2>
+//     <p class="price">giá: ${product.price.toLocaleString()} đ</p>
+//     <p>${product.description}</p>
+//   `;
+
+//   // Thêm phần tử sản phẩm vào trang HTML
+//   document.body.appendChild(productElement);
+// }
+
+</script>
+</html>
